@@ -21,7 +21,7 @@ import opennlp.tools.tokenize.Tokenizer;
  *
  */
 @ApplicationScoped
-public class MyDocCat {
+public class GeDocCat {
 	
 	private static final String ROOT_PATH = "/home/pesilva/workspace/code/pessoal/tdc-nlp/";
 	

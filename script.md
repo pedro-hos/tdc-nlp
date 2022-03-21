@@ -1,7 +1,12 @@
+- GE Dataset: https://www.kaggle.com/datasets/lgmoneda/ge-soccer-clubs-news
+ - PT POS: https://www.sketchengine.eu/portuguese-tagset/
+
 0. Executar exemplo de CLI:
 
 ```shell
 $ opennlp LanguageDetector model/langdetect-183.bin < dataset/lang-detect.txt
+
+$ opennlp POSTagger model/pt-pos-perceptron.bin < dataset/lang-detect.txt
 ```
 
 1. Criando projeto com Quarkus:
@@ -256,7 +261,7 @@ import opennlp.tools.tokenize.Tokenizer;
  *
  */
 @ApplicationScoped
-public class MyDocCat {
+public class GeDocCat {
 	
 	private static final String ROOT_PATH = "/home/pesilva/workspace/code/pessoal/tdc-nlp/";
 	

@@ -8,18 +8,18 @@ import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import io.pedrohos.nlp.doccat.MyDocCat;
+import io.pedrohos.nlp.doccat.GeDocCat;
 
 @Path("/nlp/doccat")
 public class DocCatResource {
 
 	@Inject
-	MyDocCat mydoccat;
+	GeDocCat mydoccat;
 	
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Response geCat(@QueryParam("text") String text) {
-        return Response.ok().entity(MyDocCat.classifyText(text)).build();
+        return Response.ok().entity(GeDocCat.classifyText(text)).build();
     }
     
 }

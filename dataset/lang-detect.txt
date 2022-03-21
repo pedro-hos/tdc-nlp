@@ -1,3 +1,1 @@
 Onze clubes que irão disputar as divisões de acesso do Brasileiro acabaram sendo rebaixados nos respectivos campeonatos estaduais; foram dois da Série B, dois da C e pelo menos sete da Série D
-The following command will train the document categorizer and write the model to en-doccat.bin:
-先秦兩漢
